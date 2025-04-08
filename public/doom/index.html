@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <title>DOOM</title>
+    <script src="https://js-dos.com/cdn/js-dos-api.js"></script>
+    <link rel="stylesheet" href="https://js-dos.com/6.22/current/js-dos.css" />
+  </head>
+  <body >
+    <div id="dosbox"></div>
+    <script>
+      const dosbox = new Dosbox({
+        id: 'dosbox',
+        onload: function (dosbox) {
+          dosbox.run("https://js-dos.com/cdn/upload/DOOM-@evilution.zip", "./DOOM/DOOM.EXE");
+        }
+      });
+    </script>
+  </body>
+</html>
